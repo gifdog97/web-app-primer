@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title> DETAIL </title>
+  </head>
+  <body>
+    <ul>
+      <li> <a href="#hey">hey</a></li>
+      <li> <a href="#oh">oh</a></li>
+    </ul>
+    <h1>目安箱</h1>
+    <form action="receive.php" method="post">
+      <dl>
+        <dt>ユーザー名</dt>
+        <dd>
+          <input type="text" name="user_name">
+        </dd>
+        <dt>パスワード</dt>
+        <dd>
+          <input type="password" name="user_password">
+        </dd>
+        <dt>得意なこと</dt>
+        <dd>
+          <ul>
+            <li><input type="checkbox" name="skill" value="Excel">Excel</li>
+            <li><input type="checkbox" name="skill" value="Word">Word</li>
+          </ul>
+        </dd>
+        <dt>リセット</dt>
+        <dd>
+          <input type="reset" name="reset" value="ガッハッハ！">
+        </dd>
+      </dl>
+      <dl>
+        <dt>希望職種</dt>
+        <dd>
+          <select name="job">
+            <option hidden>選択してください</option>
+            <option value="Webエンジニア">Webエンジニア</option>
+            <option value="モバイルエンジニア">モバイルエンジニア</option>
+          </select>
+        </dd>
+      </dl>
+      <dl>
+        <dt>自己PR</dt>
+        <dd>
+          <textarea name="PR" cols="40" rows="6"></textarea>
+        </dd>
+      </dl>
+      <p><input type="submit" value="ログイン"></p>
+    </form>
+    <h3>フォームの注意点など</h3>
+    <ul>
+      <li>typeがめっちゃいろいろあって日付入力とかさせることもできる</li>
+      <li>value属性の値を使って送信されるデータを特定する（phpとかで）</li>
+    </ul>
+    <h2 id="hey"> HEY </h2>
+    <h2 id="oh"> OH </h2>
+    <a href="https://google.com">
+      <h3>Google homepage</h3>
+        <p> looks like this </p>
+    </a>
+  </body> 
+</html>
