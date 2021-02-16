@@ -12,13 +12,13 @@
     <h1>目安箱</h1>
     <form action="receive.php" method="post">
       <dl>
-        <dt>ユーザー名</dt>
+        <dt><label for="user_name">ユーザー名</label></dt>
         <dd>
-          <input type="text" name="user_name">
+          <input type="text" id="user_name" name="user_name">
         </dd>
-        <dt>パスワード</dt>
+        <dt><label for="user_password">パスワード</label></dt>
         <dd>
-          <input type="password" name="user_password">
+          <input type="password" id="user_password" name="user_password">
         </dd>
         <dt>得意なこと</dt>
         <dd>
@@ -43,9 +43,9 @@
         </dd>
       </dl>
       <dl>
-        <dt>自己PR</dt>
+        <dt><label for="PR">自己PR</label></dt>
         <dd>
-          <textarea name="PR" cols="40" rows="6"></textarea>
+          <textarea id="PR" name="PR" cols="40" rows="6"></textarea>
         </dd>
       </dl>
       <p><input type="submit" value="ログイン"></p>
